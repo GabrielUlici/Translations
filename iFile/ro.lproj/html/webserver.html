@@ -1,0 +1,83 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0//EN" "http://www.w3.org/TR/REC-html40/strict.dtd">
+<html>
+<head>
+<title>Server Web</title>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+<meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+<link rel="stylesheet" href="../../common/index.css" />
+</head>
+<body >
+<div id="content">
+<ul class="table"><li class="tableitem">
+<h2>Serverele Web și WebDAV</h2>
+<p>iFile conține un server Web care poate servi fişiere la un browser web de la distanţă
+sau la un client WebDAV (doar pentru copiile iFile înregistrate). Cam toate sistemele de operare
+moderne conțin un client WebDAV, iFile poate fi folosit ca un 
+disk drive de la distanță, ex. de MacOSX, Windows sau Linux.</p>
+<h3>Start serverul Web</h3>
+<p>După ce apeși pe butonul
+<img class="inlineimage" width="20" src="../../common/WIFI.png"/>
+ serverul web integrat va fi pornit.</p>
+<center><img class="image" src="webserver.png"/></center>
+
+<h3>Utilizat prin intermediul navigatorului Web</h3>
+<p>Dacă folosești Safari pe un PC sau Mac, vei găsi serverul web cu ușurință cu ajutorul lui Bonjour. 
+ Altfel, vei fi nevoit să introduci adresa în navigator.
+Serverul web va afișa conșinutul directorului root.
+Utilizatorul poate naviga jos în ierarhie.</p>
+<center><img class="image" src="webserver_index.png"/></center>
+<p>Poți încărca  în sau descărca fișiere din acel director.</p>
+<center><img class="image" src="webserver_uploaded.png"/></center>
+
+<h3>Utilizat prin intermediul Clientului WebDAV</h3>
+<h4>Mac OS X</h4>
+<ol class="list">
+<li>Pornește Finder și dezactivează previzualizarea fișierelor.</li>
+<li>Du-te ➔ Conectează-te la Server...</li>
+<li>În dialogul "Conectează-te la Server" introduce adresa serverului asa cum e afișată
+     de iFile. În cazul în care ai ales autentificare cu nume de utilizator/parolă,
+	 introdu numele de utilizator și parola cum au fost definite în Preferințele iFile. Altfel,
+	 conecteazăte ca și oaspete.</li>
+<li>Apasă butonul "Conectează"</li>
+</ol>
+<p><b>Notă: </b>Pentru a preveni crearea fișierelor .DS_Store în iPhone, ai 
+vrea să citești <a href="http://support.apple.com/kb/HT1629">Article HT1629</a>.</p>
+<p>Poți să foloșești Cyber Duck sau un alt client WebDAV pe Mac. Are avantajele că
+auto-descoperă serverul iFile WebDAV prin Bonjour.</p>
+
+<h4>Linux (Ubuntu 9.10)</h4>
+<p>Aceasta a fost testată cu succes pe Ubuntu 9.10. Dar au fost niște probleme pe
+Ubuntu 9.04</p>
+<ol class="list">
+<li>Places ➔ Connect to Server...</li>
+<li>Setează câmpurile în dialogul "Connect to Server":
+<ul class="list">
+<li>Tipul Serviciului: WebDAV (HTTP)</li>
+<li>Server:       Adresa IP așa cum este afișat de iFile fără port, e.g. <i>192.168.0.2</i></li>
+<li>Port:         Port așa cum este afișat de iFile, ex. <i>8080</i></li>
+<li>Director:       <i>/var/mobile</i></li>
+<li>Nume de utilizator:    lasă gol și nu folosi autentificare pentru că nu merge</li>
+<li>Apasă butonul "Conectează"</li>
+</ul>
+</ol>
+<p><b>Notă: </b>Ubuntu 9.10 încă are probleme când mută fișiere dintr-un director în altul
+pe iPhone. Resultatul e ca se blochează. Este o eroare și în
+momentul în care copiezi fișiere din iPhone la Ubuntu pe 9.04.
+Închide serverul (și va începe să transmită). Cu toate că, mutarea nu va fii permanentă.</p>
+
+<h4>Windows XP</h4>
+<ol class="list">
+<li>În "My Network Places" alege "Add a network place"</li>
+<li>În "Add Network Place Wizard" apasă Next de două ori</li>
+<li>Introduce adresa serverului WEB asa cum e afișat de iFile, ex. <i>http://192.168.0.10:10000</i> sau
+    <i>http://192.168.0.10:10000/var/mobile</i></li>
+<li>Apasă Next și alege destinația pentru rețea</li>
+<li>Apasă Next și Finish</li>
+</ol>
+
+</li>
+</ul>
+</div>
+
+</body>
+</html>
