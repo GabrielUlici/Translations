@@ -10,6 +10,74 @@
 <ul class="table">
 
 <li class="tableitem">
+<h2>1.7.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h2>
+<ul class="list">
+<li>Enhancements
+  <ul>
+    <li>Added option to open new tabs using bookmarks.</li>
+    <li>Completely refactored local and remote file handling.</li>
+    <li>New FTP client supporting copy, cut, paste, rename, delete.</li>
+    <li>Overhaul of Dropbox implementation.</li>
+    <li>Changed iFile-to-iFile Bluetooth transfer to disable device locking during transfer.</li>
+    <li>Added section index also in case of sorting and grouping files by extension.</li>
+    <li>Restructured iFile's preferences.</li>
+    <li>AirBlue Sharing support added.</li>
+    <li>Added support for auto mounting harddisks (MSDOS and HFS file systems) on iPad via Camera Connection Kit.</li>
+    <li>Hungarian and European Portuguese localization added.</li>
+  </ul>
+</li>
+<li>Fixes
+  <ul>
+    <li>Corrected German and Chinese localizations.</li>
+    <li>Fixed handling of large files sizes for download, upload and directory listing in Web Server.</li>
+    <li>Added strict type checking on preferences to avoid potential crashes because of illegal values in the preference file.</li>
+    <li>Fixed crash on iPad while changing attributes hierarchically.</li>
+    <li>Updated French localization.</li>
+    <li>Fixed crash of Web Viewer on iOS 5.1 (caused by iOS bug).</li>
+    <li>Avoided showing of . and .. for mounted flash drives.</li>
+    <li>Fixed broken disk image mounting for iOS 5.x.</li>
+  </ul>
+</li>
+</ul>
+</li>
+
+<li class="tableitem">
+<h4>1.6.1-3 - Bugfix Release (iOS 4.x and later)</h4>
+<ul class="list">
+<li>Fixes
+  <ul>
+    <li>Fixed issue in web server's content headers leading to corrupt pages for Firefox 8.</li>
+    <li>Fixed segmentation fault when renaming Dropbox files on iPad.</li>
+    <li>Updated Dropbox SDK to version 0.3.</li><li>Added korean translator to features.html.</li>
+    <li>Corrected too small "Pull down to reload" label in Chinese in landscape on iPad.</li>
+    <li>Fixed registration status dialog field sizes.</li>
+    <li>Corrected position of Done button in HUD when saving a file to Dropbox from Text Editor.</li>
+    <li>Fixed that saving a file from Text Editor to Dropbox failed when the filename contained special characters.</li>
+    <li>Fixed Send/Cancel button handling for support emails for iOS 5.</li>
+    <li>Fixed that downloaded Dropbox music files could not be played in Audio Player.</li>
+  </ul>
+</li>
+</ul>
+</li>
+
+<li class="tableitem">
+<h4>1.6.1-2 - Bugfix Release (iOS 4.x and later)</h4>
+<ul class="list">
+<li>Fixes
+  <ul>
+    <li>Corrected French translation for "The image got successfully added to the camera roll.".</li>
+    <li>Added Web Viewer as default for mime-types image/jpeg, image/bmp, image/png, image/tiff,image/gif.</li>
+    <li>Added no-artwork image for Audio Player in iPad's native resolution.</li>
+    <li>Localized "MB free" at bottom of file browser.</li>
+    <li>Corrected that image sizes did not get displayed correctly for @2x files.</li>
+    <li>Fixed bug that lead to re-registration of iFile at every start.</li>
+    <li>Fixed crash in Audio Player related to empty genre string setting in mp3 files.</li>
+  </ul>
+</li>
+</ul>
+</li>
+
+<li class="tableitem">
 <h2>1.6.1-3 - Bugfix Release (iOS 4.x and later)</h2>
 <ul class="list">
 <li>Fixes
@@ -52,7 +120,7 @@
 <ul class="list">
 <li>Enhancements
   <ul>
-    <li>Added support for DMG (Apple Disk Image) mounting./li>
+    <li>Added support for DMG (Apple Disk Image) mounting.</li>
     <li>Dropbox files and directories get shown in green color if they are contained in local cache.</li>
     <li>Dropbox choice in add tab dialog will only be shown if iFile got linked to Dropbox.</li>
     <li>Added support for cover art embedded in mp3 files (ID3).</li>
