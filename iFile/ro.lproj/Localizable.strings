@@ -454,3 +454,28 @@
 /* Other strings */
 "Bookmark" = "Semne de Carte";
 "The file '%@' got successfully added to iPod library." = "Fișierul '%@' a fost adăugat cu succes la librăria iPod.";
+
+/* Updates for iFile 1.8.0-1 */
+/* Toshiba FlashAir® WebServer Support */
+"Toshiba FlashAir®" = "Toshiba FlashAir®";
+"Clear FlashAir® Cache" = "Elimină FlashAir® Cache";
+"Clearing Toshiba FlashAir® cache failed." = "Eliminarea cache-ului Toshiba FlashAir® a eșuat.";
+"The Toshiba FlashAir® protocol supports only directory listing and file download operations." = "Protocolul Toshiba FlashAir® acceptă doar afișarea listei de directoare și a operațiunilor de descărcare a fișierelor.";
+/* box.net Support */
+"box.net" = "box.net";
+"Account Unlinked" = "Cont Deconectat";
+"Clear box.net Cache" = "Elimină box.net Cache";
+"Clearing box.net cache failed." = "Eliminarea cache-ului box.net a eșuat.";
+"Do you want to relink?" = "Vrei ca să refac legătura?";
+"Logged out" = "Deconectat";
+"Login box.net" = "Autentificare box.net";
+"Logout box.net" = "Deconectat box.net";
+"No connection to box.net." = "Nici o conecțiune cu box.net.";
+"Relink" = "Relink";
+"You have logged out of your box.net account." = "Esti deconectat din contul box.net.";
+/* Additional Dropbox-related Strings */
+"Dropbox Session Ended" = "Sesiunea Dropbox a sfârșit";
+"Your dropbox account has been unlinked." = "Contul tău de dropbox a fost deconectat.";
+
+
+

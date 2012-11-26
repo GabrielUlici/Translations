@@ -397,3 +397,29 @@
 "Display" = "Display";
 /* Updates for release 1.6.1-2 */
 ", %@ free" = ", %@ free";
+
+/* Updates for iFile 1.8.0-1 */
+/* Toshiba FlashAir® WebServer Support */
+"Toshiba FlashAir®" = "Toshiba FlashAir®";
+"Clear FlashAir® Cache" = "Clear FlashAir® Cache";
+"Clearing Toshiba FlashAir® cache failed." = "Clearing Toshiba FlashAir® cache failed.";
+"The Toshiba FlashAir® protocol supports only directory listing and file download operations." = "The Toshiba FlashAir® protocol supports only directory listing and file download operations.";
+/* box.net Support */
+"box.net" = "box.net";
+"Account Unlinked" = "Account Unlinked";
+"Clear box.net Cache" = "Clear box.net Cache";
+"Clearing box.net cache failed." = "Clearing box.net cache failed.";
+"Do you want to relink?" = "Do you want to relink?";
+"Logged out" = "Logged out";
+"Login box.net" = "Login box.net";
+"Logout box.net" = "Logout box.net";
+"No connection to box.net." = "No connection to box.net.";
+"Relink" = "Relink";
+"You have logged out of your box.net account." = "You have logged out of your box.net account.";
+/* Additional Dropbox-related Strings */
+"Dropbox Session Ended" = "Dropbox Session Ended";
+"Your dropbox account has been unlinked." = "Your dropbox account has been unlinked.";
+
+
+
+
