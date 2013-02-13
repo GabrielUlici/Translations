@@ -9,8 +9,17 @@
 <div id="content">
 <ul class="table">
 
+
 <li class="tableitem">
-<h2>1.6.1-3 - Bugfix Release (iOS 4.x and later)</h2>
+		<h3>Change-Log</h3><ul class="table"><li class="tableitem"><h4>Not Yet Released: 1.9.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Enhancements<ul><li>Added WebDAV client with support for HTTP and HTTPS.</li><li>Added Bonjour browser to find FTP, WebDAV and WebDAVS servers.</li><li>Added Hex Editor. It can be opened via Open with... in a file's Attributes Editor. It supports search, go to index, copy, cut, paste, delete, and undo/redo. Supported Gestures:<ul><li>Tap on line numbers changes between hexadecimal and decimal representation.</li><li>Tap on hex/string fields sets cursor. Second tap on same position shows edit menu.</li><li>Double tap on hex/string fields selects a single byte/character.</li><li>Tripple tap on hex/string fields selects a complete line.</li><li>Long-press on hex/string fields lets you move the cursor around showing a magnifying glass.</li><li>Pinch changes the font size.</li></ul></li><li>Added SQLite3 Editor for files with extension sqlite, sqlite3, sqlitedb, db. It allows to edit integer, float and string fields. Blob fields are not editable.</li><li>Added new preferences option to have folders to be at top of file list or sorted the same way as files (only sort by size is an exception to this as folders don't have a size associated with them).</li><li>Added Shared section in shortcuts on iPad to contain remote file system shortcuts, e.g box.net and Dropbox.</li></ul></li><li>Fixes<ul><li>Corrected download progress for download of a single file from an FTP server.</li><li>Corrected double loading of directory contents on iPhone after clearing a remote server cache.</li><li>Fixes to WebDAV server to better play with new iFile WebDAV client.</li><li>Added username and password form in case loading an FTP directory failed because of failed authentication.</li><li>Fixed failing directory creation during hierarchical upload to box.net.</li><li>Fixed that songlist and play options in Audio Player were ill formatted when Audio Player got opened in landscape mode on iPad.</li><li>Fixed that canceling downloads from Dropbox did just close the HUD, but did not cancel the operation.</li><li>Corrected that taps on the play options in Audio Player caused the play options view to be hidden.</li><li>Corrected illegal character in Czech localization.</li><li>Fixed that Dropbox-to-Dropbox move/copy did not work (also applies to renaming of files) because of changed Dropbox API.</li><li>Fixed bug that lead to not showing the viewer chooser for files that don't have a supported mime-type.</li></ul></li></ul></li><li class="tableitem"><h4>1.8.1-1 - Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Fixes<ul><li>Corrected iFile binary for old iDevices (armv6) to be identical to 1.7.2-2 instead of 1.7.0-2.</li><li>Corrected that iFile did not run as super user on old iDevices (armv6).</li><li>Updated Hungarian localization and HTML files.</li><li>Fixed crash on iOS 5.1 when linking to Dropbox (happened when Dropbox app was not installed).</li><li>Fixed that iFile did not remember that it got already linked to a box account.</li><li>Fixed that option bar got hidden in AudioPlayer when the user tapped on repeat mode button, shuffle button or iPod Library Import button.</li></ul></li></ul></li><li class="tableitem"><h4>1.8.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Enhancements<ul><li>Updated iFile for iPhone 5 (startup image) and iOS 6 support in general.</li><li>Support added for accessing box.net as remote file system.</li><li>Support for remote browsing of Toshiba FlashAir SDCards added as remote file system (browsing and copying supported).</li><li>Upgraded Dropbox SDK Version to 1.3.2 - mandatory to allow authentication beyond 30-Nov-2012.</li><li>Removed trash icon for closing tabs and added close button instead (similiar to Safari).</li><li>Added xm file extension to be opened in iFile's Text Editor by default.</li><li>Switched compiler from GCC to CLANG.</li><li>The fixes and enhancements of this release will only apply to armv7 based iOS devices, i.e. following iOS devices:<ul><li>All iPads running iOS 4 or later.</li><li>All iPhones starting with iPhone 3GS or later.</li><li>All iPod touch starting with iPod touch (3rd gen.) or later.</li></ul></li><li>Added background images to file browser to ease identification of box, Dropbox and FTP tabs.</li><li>Added labels for file system type and path to tab chooser.</li></ul></li><li>Fixes<ul><li>Fixed crash in Registration Status dialog after entering it for 2nd time.</li><li>Corrected reflection of browser images in tab chooser.</li><li>Crash fixed in Zip Viewer.</li><li>Fixed deadlock during startup of iFile when a password needed to be entered for an FTP server, but it was blocked by the startup GUI.</li><li>Fixed registration failures on iOS 6</li><li>Fixed that browser did not refresh after file renaming on an iPad.</li><li>Fixed various issues with bookmarking of files on iPad.</li></ul></li></ul></li><li class="tableitem"><h4>1.7.2-2 - Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Fixes<ul><li>Fixed wrong field height in Preferences on iPad.</li></ul></li></ul></li><li class="tableitem"><h4>1.7.2-1 - Feature and Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Enhancements<ul><li>iFile will now show a movie icon for avi files.</li><li>iFile's web server shows now also App names and song titles instead of cryptic paths when these options are enabled in iFile's preferences.</li><li>Updated iFile's web server's favicon.</li><li>Added support for automatically uploading text files edited on an FTP server after a save operation in Text Editor.</li></ul></li><li>Fixes<ul><li>Explicitly setting of black background for tab chooser.</li><li>Avoided dead lock when password entry for FTP server was required, but GUI was blocked by glass pane.</li><li>Fixed that navigation bar did not get hidden during search on FTP server and Dropbox.</li><li>Fixed that search on FTP server and Dropbox did not show matching directories.</li><li>Added workaround to avoid crashes during directory listings on FTP servers not supporting UTF8 natively. Files with special characters on such servers list now correctly, but cannot be renamed, moved or copied.</li><li>Fixed broken creation of symbolic links via 'New' form.</li><li>Fixed GUI glitch of too large field for buying an iFile license.</li><li>Fixed empty preferences after returning from About iFile.</li><li>Fixed that hierarchical search always searched also in hidden folders independent of iFile's preferences setting.</li><li>Fixed that for cached files from an FTP server the list of file viewers was incorrectly displayed.</li><li>Fixed that an cancelled FTP file transfer did not get interrupted.</li><li>Fixed that file name of the ZIP got shortened when it contained multiple dots in its name.</li><li>Fixed that deletion of multiple files on FTP server stopped after first file deletion.</li><li>Fixed that a select all in search results did not make the toolbar visible again.</li><li>Corrected behavior when editing attributes of a file in search results: After pressing done in Attributes Editor, the user returns to the current directory instead of the search results.</li></ul></li></ul></li><li class="tableitem"><h4>1.7.1-1 - Feature and Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Enhancements<ul><li>Added support for loading MobileSubstrate extension SwipeShiftCaret.dylib.</li><li>Added support for hiding dot files on QNAP NAS (start with :2e). </li><li>Vietnamese Localization added.</li><li>preinst script included in iFile package that kills iFile before installation in Cydia.</li></ul></li><li>Fixes<ul><li>Corrected reformatted preferences view when returning from sub-views.</li><li>Corrected handling of empty file name when creating new file/folder/link to avoid crash.</li><li>Corrected handling special characters in user names in FTP URL's, e.g. email addresses.</li><li>Corrected that Attributes Editor did not close after FTP/Dropbox file renaming (iPhone).</li><li>Corrected that directory listing did not get updated after FTP/Dropbox file renaming (iPad).</li><li>Corrected reading of preferences so that they don't get overwritten by defaults (iOS 4.x).</li><li>Corrected shortened directory listings on FTP servers in case of large number of files./li&gt;</li><li>Corrected bug that not all files of large FTP directories did get copied/moved to local file system.</li><li>Fixed display issue when user rotated the iDevice in a viewer and then returned to file browser.</li><li>Fixed crash while storing a text file in Dropbox from Text Editor.</li><li>Corrected too small display of PDF's on 3rd generation iPad.</li><li>Corrected Image and PDF Viewer to display the images and PDF's fixed centered (iOS 5.x).</li><li>Corrected handling of copying between remote and local file systems in case of using just a single tab.</li><li>Fixed crash in Preferences-&gt;Registration Status.</li><li>Fixed crash when deleting files.</li></ul></li></ul></li><li class="tableitem">
+<h4>1.7.0-2 - Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Fixes<ul><li>Corrected Polish and Japanese localizations.</li><li>Included Hungarian and European Portuguese localizations in package.</li></ul></li></ul></li><li class="tableitem"><h4>1.7.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h4><ul class="list"><li>Enhancements<ul><li>Added option to open new tabs using bookmarks.</li><li>Completely refactored local and remote file handling.</li><li>New FTP client supporting copy, cut, paste, rename, delete.</li><li>Overhaul of Dropbox implementation.</li><li>Changed iFile-to-iFile Bluetooth transfer to disable device locking during transfer.</li><li>Added section index also in case of sorting and grouping files by extension.</li><li>Restructured iFile's preferences.</li><li>AirBlue Sharing support added.</li><li>Added support for auto mounting harddisks (MSDOS and HFS file systems) on iPad via Camera Connection Kit.</li><li>Hungarian and European Portuguese localization added.</li></ul></li><li>Fixes<ul><li>Corrected German and Chinese localizations.</li><li>Fixed handling of large files sizes for download, upload and directory listing in Web Server.</li><li>Added strict type checking on preferences to avoid potential crashes because of illegal values in the preference file.</li><li>Fixed crash on iPad while changing attributes hierarchically.</li><li>Updated French localization.</li><li>Fixed crash of Web Viewer on iOS 5.1 (caused by iOS bug).</li><li>Avoided showing of . and .. for mounted flash drives.</li><li>Fixed broken disk image mounting for iOS 5.x.</li></ul></li></ul></li>
+
+
+
+
+
+<li class="tableitem">
+<h3>1.6.1-3 - Bugfix Release (iOS 4.x and later)</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -30,7 +39,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.6.1-2 - Bugfix Release (iOS 4.x and later)</h2>
+<h3>1.6.1-2 - Bugfix Release (iOS 4.x and later)</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -47,7 +56,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.6.1-1 - Feature and Bugfix Release (iOS 4.x and later)</h2>
+<h3>1.6.1-1 - Feature and Bugfix Release (iOS 4.x and later)</h3>
 <ul class="list">
 <li>Enhancements
   <ul>
@@ -76,7 +85,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.6.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h2>
+<h3>1.6.0-1 - Feature and Bugfix Release (iOS 4.x and later)</h3>
 <ul class="list">
 <li>Enhancements
   <ul>
@@ -151,7 +160,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.5.0-4 - Bugfix Release</h2>
+<h3>1.5.0-4 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -166,7 +175,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.5.0-3 - Bugfix Release</h2>
+<h3>1.5.0-3 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -180,7 +189,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.5.0-2 - Bugfix Release</h2>
+<h3>1.5.0-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -198,7 +207,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.5.0-1 - Feature and Bugfix Release</h2>
+<h3>1.5.0-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -256,7 +265,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.4.2-1 - Feature and Bugfix Release</h2>
+<h3>1.4.2-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -273,7 +282,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.4.1-3 - Bugfix Release</h2>
+<h3>1.4.1-3 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -289,7 +298,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.4.1-2 - Bugfix Release</h2>
+<h3>1.4.1-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -301,7 +310,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.4.1-1 - Bugfix and Feature Release</h2>
+<h3>1.4.1-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Enhancements
   <ul>
@@ -336,7 +345,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.4.0-1 - Bugfix and Feature Release</h2>
+<h3>1.4.0-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Please note that the enhancements in this release are only available on devices with iOS 4.0 and later.</li>
 <li>This release contains only an updated and translated localization for Chinese, Croatian, Dutch, English, Finnish, French, German, Greek, Italian, Japanese, Polish, Russian, Slovak, Spanish, Turkish, Ukrainian. All other localizations will get updated in following minor releases.</li>
@@ -411,7 +420,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.3.2-1 - Bugfix and Feature Release</h2>
+<h3>1.3.2-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Enhancements and Fixes
   <ul>
@@ -430,7 +439,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.3.1-1 - Bugfix and Feature Release</h2>
+<h3>1.3.1-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Enhancements
   <ul>
@@ -453,7 +462,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.3.0-2 - Bugfix Release</h2>
+<h3>1.3.0-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes  
   <ul>
@@ -469,7 +478,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.3.0-1 - Feature and Bugfix Release</h2>
+<h3>1.3.0-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Added support for iOS 3.2 and iOS 4.0 File Sharing
   <ul>
@@ -506,7 +515,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.2.2-1 - Feature and Bugfix Release</h2>
+<h3>1.2.2-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Added support for iPad
   <ul>
@@ -538,7 +547,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.2.1-2 - Bugfix Release</h2>
+<h3>1.2.1-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixes
   <ul>
@@ -551,7 +560,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.2.1-1 - Feature and Bugfix Release</h2>
+<h3>1.2.1-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Added support for iPad
   <ul>
@@ -586,7 +595,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.2.0-1 - Feature and Bugfix Release</h2>
+<h3>1.2.0-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>Additional Localizations
   <ul>
@@ -694,7 +703,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.1.0-1 - Feature and Bugfix Release</h2>
+<h3>1.1.0-1 - Feature and Bugfix Release</h3>
 <ul class="list">
 <li>General
   <ul>
@@ -832,7 +841,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.0.1-1 - Bugfix and Feature Release</h2>
+<h3>1.0.1-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>iFile becomes ShareWare. A number of users complained that donations should not be enforced. Since I require some financial compensation for the development of iFile, I don't call it 'donation' anymore, but 'registration' which should be clearer.</li>
 <li>Added registration GUI to be opened from iFile Registration pop-up or iFile Preferences.</li>
@@ -841,7 +850,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.0.0-2 - Bugfix Release</h2>
+<h3>1.0.0-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Fixed issue with error message while unpacking rar files. The extracted files now get placed into current directory instead of /private/var/mobile.</li>
 <li>Corrected encoding in changelog.html and features.html in Polish documentation</li>
@@ -849,7 +858,7 @@
 </li>
 
 <li class="tableitem">
-<h2>1.0.0-1 - Bugfix and Feature Release</h2>
+<h3>1.0.0-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>iPhoneOS 2.x and 3.0 compatiblity</li>
 <li>Added Czech, Polish and Ukrainian localizations.</li>
@@ -915,7 +924,7 @@
 </li>
 
 <li class="tableitem">
-<h2>0.9.7 - Bugfix and Feature Release</h2>
+<h3>0.9.7 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Added Amharic (Ethiopian), Chinese, Russian and Turkish localizations.</li>
 <li>Preferences
@@ -984,7 +993,7 @@
 </li>
 
 <li class="tableitem">
-<h2>0.9.6-2 - Bugfix Release</h2>
+<h3>0.9.6-2 - Bugfix Release</h3>
 <ul class="list">
 <li>Web Server
 <ul>
@@ -999,7 +1008,7 @@ value zero. Lead to issue with all downloaded files to be wrong.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.6-1 - Bugfix and Feature Release</h2>
+<h3>0.9.6-1 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Added Arabic, French and Japanese localizations. Arabic and French
 documentation will be translated in the coming releases.</li>
@@ -1058,7 +1067,7 @@ size, or date.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.5 - Bugfix and Feature Release</h2>
+<h3>0.9.5 - Bugfix and Feature Release</h3>
 <ul class="list">
 <li>Fixed problem that ZIP Viewer did not extract files when <i>Extract 
 All Files</i> chosen.</li>
@@ -1106,7 +1115,7 @@ of tabulator width</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.4 - Feature Release</h2>
+<h3>0.9.4 - Feature Release</h3>
 <ul class="list">
 <li>Italian localization added.</li>
 <li>Full rewrite of Web Server for file upload and download via WIFI. 
@@ -1120,7 +1129,7 @@ and delete files from a ZIP file.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.3 - Feature Release</h2>
+<h3>0.9.3 - Feature Release</h3>
 <ul class="list">
 <li>This release lets iFile run with super user permissions.
 The user can now rename and delete any file or folder in the
@@ -1133,7 +1142,7 @@ one has been added.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.2 - Bugfix Release</h2>
+<h3>0.9.2 - Bugfix Release</h3>
 <ul class="list">
 <li>This release fixes the issue that a user ends up 
 in /var/mobile/Documents after initial install and start, 
@@ -1142,7 +1151,7 @@ but cannot navigate up in hierarchy.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.1 - Initial Public Release in <a href="http://thebigboss.org">BigBoss Repository</a></h2>
+<h3>0.9.1 - Initial Public Release in <a href="http://thebigboss.org">BigBoss Repository</a></h3>
 <ul class="list">
 <li>Text files now displayed in specific UITextView controller with
 smaller font than UIWebView font.</li>
@@ -1151,7 +1160,7 @@ smaller font than UIWebView font.</li>
 </li>
 
 <li class="tableitem">
-<h2>0.9.0 - Initial Version</h2>
+<h3>0.9.0 - Initial Version</h3>
 <ul class="list">
 <li>PDF get displayed with a custom view with ability to jump to specific 
 pages.</li>

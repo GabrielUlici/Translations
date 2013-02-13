@@ -477,5 +477,70 @@
 "Dropbox Session Ended" = "Sesiunea Dropbox a sfârșit";
 "Your dropbox account has been unlinked." = "Contul tău de dropbox a fost deconectat.";
 
-
-
+/* Updates for iFile 1.9.0-1 */
+/* WebDAV Client Strings */
+"Secure WebDAV Servers" = "Servere WebDAV Securizate";
+"Server Address" = "Adresă Server";
+"Login" = "Login";
+"Enter user and password:" = "Introdu utilizator și parolă:";
+/* bytes used on remote file system */
+", %@ used" = ", %@ folosit";
+/* message while updating file date on server */
+"Updating date of %@..." = "Actualizare datele al %@...";
+/* HTTP/WebDAV Error Messages */
+"Invalid Server" = "Server Invalid";
+"Server does not support required WebDAV options." = "Serverul nu suporta opțiunile necesare WebDAV.";
+"Directory listing has wrong format." = "Directory listing has wrong format.";
+"Modification date update failed." = "Modification date update failed.";
+"Bad HTTP Request." = "Bad HTTP Request.";
+"Unauthorized Access." = "Unauthorized Access.";
+"Access forbidden." = "Access forbidden.";
+"Object not found on server." = "Object not found on server.";
+"Access method not allowed." = "Access method not allowed.";
+"Access conflict." = "Access conflict.";
+"Internal Server Error." = "Internal Server Error.";
+"Functionality not implemented on server." = "Functionality not implemented on server.";
+"Insufficient storage on server." = "Insufficient storage on server.";
+"HTTP error %d." = "HTTP error %d.";
+/* Certificate Handling of WebDAV Server */
+"Accept Website Certificate" = "Accept Website Certificate";
+"Accept" = "Accept";
+"Import" = "Import";
+"Certificate Imported" = "Certificate Imported";
+"The certificate '%@' for this website is unknown or invalid. Tap accept to connect anyway." = "The certificate '%@' for this website is unknown or invalid. Tap accept to connect anyway.";
+"The certificate '%@' got successfully imported." = "The certificate '%@' got successfully imported.";
+"The certificate for this website is unknown or invalid. Tap accept to connect anyway." = "The certificate for this website is unknown or invalid. Tap accept to connect anyway.";
+"The import of certificate '%@' failed." = "The import of certificate '%@' failed.";
+/* Hex Editor Strings */
+"Hex Editor" = "Hex Editor";
+/* Search entry options of Hex Editor */
+"Hex" = "Hex";
+"ASCII" = "ASCII";
+/* Hex Editor Save Form */
+"File Changed" = "File Changed";
+"The file got changed. Do you want to save the changes?" = "The file got changed. Do you want to save the changes?";
+"Yes" = "Yes";
+"No" = "No";
+/* Strings for "go to byte index" in Hex Editor */
+"Enter the decimal byte index to display (%d-%d)." = "Enter the decimal byte index to display (%d-%d).";
+"Enter the hexadecimal byte index to display (%X-%X)." = "Enter the hexadecimal byte index to display (%X-%X).";
+"Byte index %llX does not exist. Please choose value between %llX and %llX." = "Byte index %llX does not exist. Please choose value between %llX and %llX.";
+"Byte index %lld does not exist. Please choose value between %lld and %lld." = "Byte index %lld does not exist. Please choose value between %lld and %lld.";
+"Byte index '%@' is not valid. Please choose value between %llX and %llX." = "Byte index '%@' is not valid. Please choose value between %llX and %llX.";
+"Byte index '%@' is not valid. Please choose value between %lld and %lld." = "Byte index '%@' is not valid. Please choose value between %lld and %lld.";
+/* Bonjour Browser Title */
+"Bonjour" = "Bonjour";
+/* String for remote file systems in Side Bar on iPad */
+"Shared" = "Shared";
+/* Preferences option for showing folders on top of file listing */
+"Folders On Top" = "Folders On Top";
+/* SQLite Database Editor */
+"SQLite3 Editor" = "SQLite3 Editor";
+/* title for listing of database tables */
+"Tables" = "Tables";
+/* placeholder string for user entered SQL statement */
+"SQL statement" = "SQL statement";
+"Failed to fetch SQL result" = "Failed to fetch SQL result";
+"Failed to fetch table names" = "Failed to fetch table names";
+"Failed to prepare SQL statement" = "Failed to prepare SQL statement";
+"Failed to prepare for fetching table names" = "Failed to prepare for fetching table names";
